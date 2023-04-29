@@ -48,8 +48,8 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 ---
 
-# Ajna Finance contest details
-- Total Prize Pool: $60,500 USDC (Notion: Total award pool)
+# Ajna Protocol contest details
+- Total Prize Pool: $60,500 USDC 
   - HM awards: $37,500 USDC 
   - QA report awards: $5,000 USDC 
   - Gas report awards: $2,500 USDC 
@@ -58,10 +58,10 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
   - Lookout awards: $4,000 USDC 
   - Scout awards: $500 USDC 
 - Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/2023-05-Ajna-Finance-contest/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-05-Ajna-Protocol-contest/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
-- Starts May 04, 2023 20:00 UTC 
-- Ends May XX, 2023 20:00 UTC 
+- Starts May 03, 2023 20:00 UTC 
+- Ends May 11, 2023 20:00 UTC 
 
 ## Automated Findings / Publicly Known Issues
 
