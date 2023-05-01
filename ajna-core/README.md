@@ -60,6 +60,11 @@ Caveats:
   - `ETHERSCAN_TOKEN` - required by brownie to verify contract sources
   - `WEB3_INFURA_PROJECT_ID` - required by brownie to fork chain
   - `ETH_RPC_URL` - required by forge to fork chain
+  - `QUOTE_PRECISION` - required by invariant tests
+  - `COLLATERAL_PRECISION` - required by invariant tests
+  - `BUCKET_INDEX_ERC20` - required by invariant tests
+  - `BUCKET_INDEX_ERC721` - required by invariant tests
+  - `NO_OF_BUCKETS` - required by invariant tests
 - run
 ```bash
 make all

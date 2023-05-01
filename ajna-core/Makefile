@@ -24,7 +24,8 @@ build   :; forge clean && forge build
 
 # Tests
 test                           :; forge test --no-match-test "testLoad|invariant|test_regression"  # --ffi # enable if you need the `ffi` cheat code on HEVM
-test-with-gas-report           :; forge test --no-match-test "testLoad|invariant|test_regression" --gas-report # --ffi # enable if you need the `ffi` cheat code on HEVM
+test-with-gas-report           :; QUOTE_PRECISION=${QUOTE_PRECISION} COLLATERAL_PRECISION=${COLLATERAL_PRECISION} BUCKET_INDEX_ERC20=${BUCKET_INDEX_ERC20} BUCKET_INDEX_ERC721=${BUCKET_INDEX_ERC721} NO_OF_BUCKETS=${NO_OF_BUCKETS} forge test --no-match-test 'testLoad|invariant|test_regression' --gas-report
+
 test-load                      :; forge test --match-test testLoad --gas-report
 test-invariant                 :; eval QUOTE_PRECISION=${QUOTE_PRECISION} COLLATERAL_PRECISION=${COLLATERAL_PRECISION} BUCKET_INDEX_ERC20=${BUCKET_INDEX_ERC20} BUCKET_INDEX_ERC721=${BUCKET_INDEX_ERC721} NO_OF_BUCKETS=${NO_OF_BUCKETS} forge t --mt invariant --nmc RegressionTest
 test-invariant-erc20           :; eval QUOTE_PRECISION=${QUOTE_PRECISION} COLLATERAL_PRECISION=${COLLATERAL_PRECISION} BUCKET_INDEX_ERC20=${BUCKET_INDEX_ERC20} NO_OF_BUCKETS=${NO_OF_BUCKETS} forge t --mt invariant --nmc RegressionTest --mc ERC20
