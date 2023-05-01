@@ -18,10 +18,10 @@ Install Foundry [instructions](https://github.com/gakonst/foundry/blob/master/RE
 curl -L https://foundry.paradigm.xyz | bash
 ```
 
-To get the latest `forge` or `cast` binaries, tun
+Install `foundry` version `nightly-87bc53fc6c874bd4c92d97ed180b949e3a36d78c` (required due to breaking changes introduced in foundry-rs/foundry#4827):
 
 ```bash
-foundryup
+foundryup -v nightly-87bc53fc6c874bd4c92d97ed180b949e3a36d78c
 ```
 
 #### Project Setup

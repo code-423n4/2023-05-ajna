@@ -22,7 +22,7 @@ The Ajna protocol is a non-custodial, peer-to-peer, permissionless lending, borr
 - `python` 3.0+
 - `eth-brownie` 1.18.1+
 - `ganache` 7.0+ is required.
-- `foundry` aka `forge` 0.2.0+ is required.
+- `foundry` version `nightly-87bc53fc6c874bd4c92d97ed180b949e3a36d78c` is required due to breaking changes introduced in https://github.com/foundry-rs/foundry/pull/4827.
 
 ### Foundry setup
 - Install Foundry [instructions](https://github.com/gakonst/foundry/blob/master/README.md#installation)
@@ -30,9 +30,9 @@ The Ajna protocol is a non-custodial, peer-to-peer, permissionless lending, borr
 ```bash
 curl -L https://foundry.paradigm.xyz | bash
 ```
-- To get the latest `forge` binaries, run:
+- Install `foundry` version `nightly-87bc53fc6c874bd4c92d97ed180b949e3a36d78c`:
 ```bash
-foundryup
+foundryup -v nightly-87bc53fc6c874bd4c92d97ed180b949e3a36d78c
 ```
 
 ### Brownie setup

@@ -142,6 +142,10 @@ ADMIN: N/A
 
 # Tests
 
+**NOTE**:
+- install `foundry` by running `foundryup -v nightly-87bc53fc6c874bd4c92d97ed180b949e3a36d78c` (this version is required due to breaking changes introduced in foundry-rs/foundry#4827)
+
+
 clone down and cd into the repo
 ```
 
