@@ -33,17 +33,17 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 - [ ] Modify the bottom of this `README.md` file to describe how your code is supposed to work with links to any relevent documentation and any other criteria/details that the C4 Wardens should keep in mind when reviewing. ([Here's a well-constructed example.](https://github.com/code-423n4/2022-08-foundation#readme))
   - [ ] When linking, please provide all links as full absolute links versus relative links
-  - [ ] All information should be provided in markdown format (HTML does not render on Code4rena.com)
-- [ ] Under the "Scope" heading, provide the name of each contract and:
-  - [ ] source lines of code (excluding blank lines and comments) in each
-  - [ ] external contracts called in each
-  - [ ] libraries used in each
-- [ ] Describe any novel or unique curve logic or mathematical models implemented in the contracts
-- [ ] Does the token conform to the ERC-20 standard? In what specific ways does it differ?
-- [ ] Describe anything else that adds any special logic that makes your approach unique
+  - [x] All information should be provided in markdown format (HTML does not render on Code4rena.com)
+- [x] Under the "Scope" heading, provide the name of each contract and:
+  - [x] source lines of code (excluding blank lines and comments) in each
+  - [x] external contracts called in each
+  - [x] libraries used in each
+- [x] Describe any novel or unique curve logic or mathematical models implemented in the contracts
+- [x] Does the token conform to the ERC-20 standard? In what specific ways does it differ?
+- [x] Describe anything else that adds any special logic that makes your approach unique
 - [ ] Identify any areas of specific concern in reviewing the code
-- [ ] Optional / nice to have: pre-record a high-level overview of your protocol (not just specific smart contract functions). This saves wardens a lot of time wading through documentation.
-- [ ] See also: [this checklist in Notion](https://code4rena.notion.site/Key-info-for-Code4rena-sponsors-f60764c4c4574bbf8e7a6dbd72cc49b4#0cafa01e6201462e9f78677a39e09746)
+- [x] Optional / nice to have: pre-record a high-level overview of your protocol (not just specific smart contract functions). This saves wardens a lot of time wading through documentation.
+- [x] See also: [this checklist in Notion](https://code4rena.notion.site/Key-info-for-Code4rena-sponsors-f60764c4c4574bbf8e7a6dbd72cc49b4#0cafa01e6201462e9f78677a39e09746)
 - [ ] Delete this checklist and all text above the line below when you're ready.
 
 ---
@@ -80,9 +80,10 @@ The Ajna protocol is a non-custodial, peer-to-peer, permissionless lending, borr
 - [Website](https://www.ajna.finance/)
 - [Business Logic recording](https://www.youtube.com/watch?v=LoknmCG-0kw)
 - [Whitepaper](https://www.ajna.finance/)
-- [Ajna Technical Spec]()
+- [Ajna Technical Spec](https://docsend.com/view/ai74yqgzjp3yydyt)
 - [ELI5](https://www.ajna.finance/)
-- [Technical Diagrams]()
+- [Technical Diagrams Pools](https://github.com/code-423n4/2023-05-ajna/tree/main/ajna-core/docs)
+- [Technical Diagrams Grants](https://github.com/code-423n4/2023-05-ajna/tree/main/ajna-grants/docs)
 
 ## On-chain context
 
@@ -110,15 +111,12 @@ ADMIN: N/A
 * `./ajna-core/src/*` all other contracts **ASIDE** from `RewardsManager.sol` and `PositionManager.sol` (which are listed above) are out of scope for this audit.
 * `./ajna-grants/token`
 
-# Additional Context
-
-*Describe any novel or unique curve logic or mathematical models implemented in the contracts*
-
-*Sponsor, please confirm/edit the information below.*
-
 ## Scoping Details 
 ```
-- If you have a public code repo, please share it here:  
+- If you have a public code repo, please share it here:
+  - [grants](https://github.com/ajna-finance/ajna-grants)
+  - [RewardsManager](https://github.com/ajna-finance/ajna-core/blob/main/src/RewardsManager.sol)
+  - [PositionsManager](https://github.com/ajna-finance/ajna-core/blob/main/src/PositionsManager.sol)
 - How many contracts are in scope?:   3
 - Total SLoC for these contracts?:  1191
 - How many external imports are there?: 22 
@@ -145,16 +143,35 @@ ADMIN: N/A
 **NOTE**:
 - install `foundry` by running `foundryup -v nightly-87bc53fc6c874bd4c92d97ed180b949e3a36d78c` (this version is required due to breaking changes introduced in foundry-rs/foundry#4827)
 
-
 clone down and cd into the repo
 ```
-
+git clone https://github.com/code-423n4/2023-05-ajna.git && cd 2023-05-ajna
 ```
 
 ## Grants
+cd into sub repo:
+```
+cd ajna-grants
+```
+To run unit tests:
+```
+make tests
+```
+To run unit tests with gas report:
+```
+make test-with-gas-report
+```
 
 ## PositionManager and RewardsManager
-
-*Provide every step required to build the project from a fresh git clone, as well as steps to run the tests with a gas report.* 
-
-*Note: Many wardens run Slither as a first pass for testing.  Please document any known errors with no workaround.* 
+cd into sub repo:
+```
+cd ajna-core
+```
+To run unit tests:
+```
+make test
+```
+To run unit tests with gas report:
+```
+make test-with-gas-report
+```
