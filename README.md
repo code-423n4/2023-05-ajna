@@ -8,7 +8,7 @@
   - Lookout awards: $4,000 USDC 
   - Scout awards: $500 USDC 
 - Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/2023-05-Ajna-Protocol-contest/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-05-Ajna-Protocol/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
 - Starts May 03, 2023 20:00 UTC 
 - Ends May 11, 2023 20:00 UTC 
