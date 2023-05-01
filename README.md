@@ -312,3 +312,23 @@ To run unit tests with gas report:
 ```
 make test-with-gas-report
 ```
+
+## Known slither issues
+
+| Issue                                      | File Effected                         | Reason / Explanation |
+|--------------------------------------------|---------------------------------------|---------------------|
+| Arbitrary from in transferFrom             | src/base/FlashloanablePool.sol#48-52 | Implemented as designed so auctions can be atomically swapped |
+| Incorrect ERC20 function interface         | src/interfaces/pool/IPool.sol#57-61  | Non-issue believe to be slither related |
+| Dangerous strict equalities                | src/base/Pool.sol#384                | Implemented as designed to restrict contract surface area |
+| Dead code                                  | src/base/FlashloanablePool.sol#89-93 | dead code is from the abstract contract, implemented by concrete contracts |
+| State variables that could be declared immutable | src/ERC20PoolFactory.sol#25    | Limits Ajna to specific chain, no action |
+| State variables that could be declared immutable | src/base/PoolDeployer.sol#19   | Limits Ajna to specific chain, no action |
+
+| Known Contracts That Exceed Spurious Dragon Req |
+|-------------------------------------------------|
+| src/ERC20PoolFactory.sol                        |
+| src/ERC20Pool.sol                               |
+| src/RewardsManager.sol                          |
+| src/PositionManager.sol                         |
+| src/ERC721PoolFactory.sol                       |
+| src/ERC721Pool.sol                              |
