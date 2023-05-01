@@ -270,7 +270,7 @@ ADMIN: N/A
 
 # Tests
 ## Quickstart command
-`export ETH_RPC_URL='https://eth-mainnet.g.alchemy.com/v2/cTYnr-wrXnPFGRzzNewu8R7UaUeInLvN' && export QUOTE_PRECISION=18 && export COLLATERAL_PRECISION=18 && export BUCKET_INDEX_ERC20=2570 && export BUCKET_INDEX_ERC721=850 && export NO_OF_BUCKETS=3 && rm -Rf 2023-05-ajna || true && git clone https://github.com/code-423n4/2023-05-ajna.git -j8 --recurse-submodules && cd 2023-05-ajna && foundryup -v nightly-87bc53fc6c874bd4c92d97ed180b949e3a36d78c && cd ajna-grants && make test-with-gas-report && cd .. && cd ajna-core && make test-with-gas-report && cd ..`
+`export ETH_RPC_URL=<RPC_URL_HERE> && export QUOTE_PRECISION=18 && export COLLATERAL_PRECISION=18 && export BUCKET_INDEX_ERC20=2570 && export BUCKET_INDEX_ERC721=850 && export NO_OF_BUCKETS=3 && rm -Rf 2023-05-ajna || true && git clone https://github.com/code-423n4/2023-05-ajna.git -j8 --recurse-submodules && cd 2023-05-ajna && foundryup -v nightly-87bc53fc6c874bd4c92d97ed180b949e3a36d78c && cd ajna-grants && make test-with-gas-report && cd .. && cd ajna-core && make test-with-gas-report && cd ..`
 
 **NOTE**:
 - install `foundry` by running `foundryup -v nightly-87bc53fc6c874bd4c92d97ed180b949e3a36d78c` (this version is required due to breaking changes introduced in foundry-rs/foundry#4827)
