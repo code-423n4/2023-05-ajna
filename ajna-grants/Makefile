@@ -15,10 +15,10 @@ install :; git submodule update --init --recursive
 build  :; forge clean && forge build --optimize --optimizer-runs 1000000
 
 # Tests
-tests   :; forge clean && forge test --mt test --optimize --optimizer-runs 1000000 -v # --ffi # enable if you need the `ffi` cheat code on HEVM
-test-with-gas-report   :; forge clean && forge build && forge test --mt test --optimize --optimizer-runs 1000000 -v --gas-report # --ffi # enable if you need the `ffi` cheat code on HEVM
-test-invariant		 :; forge clean && forge t --mt invariant
-coverage   :; forge coverage
+tests                  :; forge clean && forge test --mt test --optimize --optimizer-runs 1000000 -v # --ffi # enable if you need the `ffi` cheat code on HEVM
+test-with-gas-report   :; forge test --optimize --optimizer-runs 1000000 --no-match-test 'invariant|test_regression|fuzz' --gas-report
+test-invariant		   :; forge clean && forge t --mt invariant
+coverage               :; forge coverage
 
 # Generate Gas Snapshots
 snapshot :; forge clean && forge snapshot --optimize --optimize-runs 1000000
