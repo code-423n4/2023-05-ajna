@@ -1,0 +1,30 @@
+[profile.default]
+src  = 'src'
+test = 'tests/forge'
+out  = 'forge_out'
+libs = ['lib']
+remappings = [
+    '@solmate=lib/solmate/src/',
+    '@std=lib/forge-std/src/',
+    '@clones=lib/clones-with-immutable-args/src/',
+    '@openzeppelin/contracts=lib/openzeppelin-contracts/contracts',
+    '@prb-math=lib/prb-math/',
+    '@base64-sol=lib/base64/',
+    'src/=src/'
+]
+verbosity           = 2
+block_timestamp     = 1_672_372_127
+block_number        = 16_295_000
+fork_block_number   = 16_295_000
+rpc_storage_caching = { chains = ["mainnet"], endpoints = "all" }
+optimizer           = true
+optimizer_runs      = 500
+
+[fuzz]
+runs = 300
+
+[invariant]
+runs           = 1000   # Number of times that a sequence of function calls is generated and run
+depth          = 20     # Number of function calls made in a given run.
+call_override  = false  # Override calls
+fail_on_revert = true   # Fail the test if the contract reverts

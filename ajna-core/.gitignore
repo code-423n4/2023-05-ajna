@@ -1,0 +1,17 @@
+cache/
+*out/
+node_modules/*
+node_modules
+.env
+.env.prod
+.idea/
+.vscode/*.log
+__pycache__/
+reports/
+.gas-snapshot
+.DS_store
+coverage/
+*.info
+report/
+keystore/
+broadcast/

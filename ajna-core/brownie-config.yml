@@ -1,0 +1,29 @@
+project_structure:
+    build: brownie_out
+    contracts: src
+    tests: tests/brownie
+
+# use Ganache's forked mainnet mode as the default network
+# NOTE: You don't *have* to do this, but it is often helpful for testing
+networks:
+  default: mainnet-fork
+
+# automatically fetch contract sources from Etherscan
+autofetch_sources: True
+
+# path remapping to support imports from GitHub/NPM
+compiler:
+  solc:
+    version: 0.8.14
+    optimizer:
+      enabled: true
+      runs: 500
+    remappings:
+      - "@ds-math=lib/ds-math/src/"
+      - "@openzeppelin/contracts=lib/openzeppelin-contracts/contracts"
+      - "@std=lib/forge-std/src/"
+      - "@solmate=lib/solmate/src/"
+      - "@prb-math=lib/prb-math/"
+      - "@clones=lib/clones-with-immutable-args/src/"
+      - "@base64-sol=lib/base64/"
+

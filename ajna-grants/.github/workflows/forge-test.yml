@@ -1,0 +1,35 @@
+name: test
+
+on: [push]
+
+env:
+  FOUNDRY_PROFILE: ci
+  ETH_RPC_URL: ${{secrets.ETH_RPC_URL}} ## Loads environment from secrets
+
+jobs:
+  check:
+    strategy:
+      fail-fast: true
+
+    name: Foundry project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly-87bc53fc6c874bd4c92d97ed180b949e3a36d78c
+
+      - name: Run Forge build
+        run: |
+          forge --version
+          forge build --sizes
+        id: build
+
+      - name: Run tests
+        run: |
+          make test-with-gas-report
+        id: test
