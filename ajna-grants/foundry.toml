@@ -1,0 +1,24 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+fs_permissions = [{ access = "read", path = "./"}]
+
+verbosity           = 3
+block_number        = 16_295_000
+fork_block_number   = 16_295_000
+rpc_storage_caching = { chains = ["mainnet"], endpoints = "all" }
+
+[fuzz]
+runs = 150
+
+[invariant]
+runs           = 1     # The number of calls to make in the invariant tests
+depth          = 500   # The number of times to run the invariant tests
+call_override  = false # Override calls
+fail_on_revert = true  # Fail the test if the contract reverts
+dictionary_weight = 80
+include_storage = true
+include_push_bytes = true

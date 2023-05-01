@@ -1,0 +1,8 @@
+{
+  "makefile.extensionOutputFolder": "./.vscode",
+  "editor.formatOnSave": false,
+  "solidity.formatter": "prettier",
+  "solidity.compileUsingLocalVersion": "latest",
+  "python.formatting.provider": "black",
+  "solidity.compileUsingRemoteVersion": "v0.8.14+commit.80d49f37"
+}

@@ -1,0 +1,59 @@
+name: Slither Analysis
+on: [push]
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Install and set solc version
+        run: |
+          pip install solc-select && solc-select install 0.8.14 && solc-select use 0.8.14
+        id: solc
+
+      - name: Install Slither
+        run: |
+          pip install slither-analyzer
+        id: slither
+
+      - name: Analyze ERC20Pool Contracts
+        run: |
+          slither src/ERC20Pool.sol
+          slither src/ERC20PoolFactory.sol
+        continue-on-error: true
+        id: erc20-analyzer
+
+      - name: Analyze ERC721Pool Contracts
+        run: |
+          slither src/ERC721Pool.sol
+          slither src/ERC721PoolFactory.sol
+        continue-on-error: true
+        id: erc721-analyzer
+
+      - name: Analyze PositionManager Contract
+        run: |
+          slither src/PositionManager.sol
+        continue-on-error: true
+        id: position-analyzer
+
+      - name: Analyze RewardsManager Contract
+        run: |
+          slither src/RewardsManager.sol
+        continue-on-error: true
+        id: rewards-analyzer
+
+      - name: Analyze PoolInfoUtils Contract
+        run: |
+          slither src/PoolInfoUtils.sol
+        continue-on-error: true
+        id: info-analyzer
+
+      - name: Analyze Libraries
+        run: |
+          slither src/libraries/external/.
+        continue-on-error: true
+        id: libraries-analyzer
+
+    timeout-minutes: 5

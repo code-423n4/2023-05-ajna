@@ -1,0 +1,32 @@
+name: Slither Analysis
+on: [push]
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Install solc-select
+        run: |
+          pip install solc-select
+        id: solc
+
+      - name: Install Slither
+        run: |
+          pip install slither-analyzer
+        id: slither
+
+      - name: Analyze AjnaToken
+        run: |
+          solc-select install 0.8.7 && solc-select use 0.8.7
+          slither src/token/ --exclude solc-version
+        id: token_analyzer
+
+      - name: Analyze GrantFund
+        run: |
+          solc-select install 0.8.16 && solc-select use 0.8.16
+          slither src/grants/
+        continue-on-error: true
+        id: fund_analyzer

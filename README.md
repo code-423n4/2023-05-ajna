@@ -69,25 +69,46 @@ Automated findings output for the contest can be found [here](add link to report
 
 *Note for C4 wardens: Anything included in the automated findings output is considered a publicly known issue and is ineligible for awards.*
 
-[ ⭐️ SPONSORS ADD INFO HERE ]
-
 # Overview
 
-*Please provide some context about the code being audited, and identify any areas of specific concern in reviewing the code. (This is a good place to link to your docs, if you have them.)*
+## About Ajna
+The Ajna protocol is a non-custodial, peer-to-peer, permissionless lending, borrowing and trading system that requires no governance or external price feeds to function. The protocol consists of pools: pairings of quote tokens provided by lenders and collateral tokens provided by borrowers. Ajna is capable of accepting fungible tokens as quote tokens and both fungible and non-fungible tokens as collateral tokens.
+
+## Resources
+
+- [Twitter](https://mobile.twitter.com/ajnafi)
+- [Website](https://www.ajna.finance/)
+- [Business Logic recording](https://www.youtube.com/watch?v=LoknmCG-0kw)
+- [Whitepaper](https://www.ajna.finance/)
+- [Ajna Technical Spec]()
+- [ELI5](https://www.ajna.finance/)
+- [Technical Diagrams]()
+
+## On-chain context
+
+```
+DEPLOYMENT: Ethereum mainnet, Arbitrum, Optimism, Binance Smart Chain, Polygon, Fantom, Tron, Avalanche
+ERC20:  any - ERC20's are used in fungible, collection and subset pool types
+ERC721: any - ERC721's are used in collection and subset pool types
+ERC777: none
+FEE-ON-TRANSFER: none
+REBASING TOKENS: none
+ADMIN: N/A
+```
 
 # Scope
 
-*List all files in scope in the table below (along with hyperlinks) -- and feel free to add notes here to emphasize areas of focus.*
-
-*For line of code counts, we recommend using [cloc](https://github.com/AlDanial/cloc).* 
-
 | Contract | SLOC | Purpose | Libraries used |  
 | ----------- | ----------- | ----------- | ----------- |
-| [contracts/folder/sample.sol](contracts/folder/sample.sol) | 123 | This contract does XYZ | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [ajna-core/src/PositionManager.sol](ajna-core/src/PositionManager.sol) | 165 | This contract holds the LP position of lenders and gives them an ERC721 token representing their position in exchange | [`@openzeppelin/contracts/token/ERC20/ERC20.sol`](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#IERC20) [`@openzeppelin/contracts/token/ERC721/ERC721.sol`](https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#IERC721) [`@openzeppelin/contracts/utils/structs/EnumerableSet.sol`](https://docs.openzeppelin.com/contracts/4.x/api/utils#EnumerableSet) [`@openzeppelin/contracts/utils/Multicall.sol`](https://docs.openzeppelin.com/contracts/4.x/utilities#multicall) [`@openzeppelin/security/ReentrancyGuard.sol`](https://docs.openzeppelin.com/contracts/4.x/api/security#ReentrancyGuard) [`@openzeppelin/contracts/token/ERC20/utilities/SafeERC20.sol`](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#SafeERC20) |
+| [ajna-core/src/RewardsManager.sol](ajna-core/src/RewardsManager.sol) | 324 | This contract provides rewards (in Ajna token) to Ajna lenders who lock up their ERC721 position from the `PositionManager.sol` contract | [`@openzeppelin/contracts/token/ERC20/ERC20.sol`](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#IERC20) [`@openzeppelin/contracts/token/ERC721/ERC721.sol`](https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#IERC721) [`@openzeppelin/security/ReentrancyGuard.sol`](https://docs.openzeppelin.com/contracts/4.x/api/security#ReentrancyGuard) [`@openzeppelin/contracts/token/ERC20/utilities/SafeERC20.sol`](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#SafeERC20) |
+| [ajna-grants/src/grants](ajna-grants/src/grants) | 652 | This contract provides  | [`@openzeppelin/contracts/token/ERC20/ERC20.sol`](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#IERC20) [`@openzeppelin/contracts/utils/math/SafeCast.sol`](https://docs.openzeppelin.com/contracts/4.x/api/utils#SafeCast) [`@openzeppelin/security/ReentrancyGuard.sol`](https://docs.openzeppelin.com/contracts/4.x/api/security#ReentrancyGuard) [`@openzeppelin/governance/utils/IVotes.sol`](https://docs.openzeppelin.com/contracts/4.x/api/governance#Votes) | [`@openzeppelin/security/ReentrancyGuard.sol`](https://docs.openzeppelin.com/contracts/4.x/api/security#ReentrancyGuard)
+
 
 ## Out of scope
 
-*List any files/contracts that are out of scope for this audit.*
+* ./ajna-core/src/* all other contracts ASIDE from `RewardsManager.sol` and `PositionManager.sol` (which are listed above) are out of scope for this audit.
+* ./ajna-grants/token
 
 # Additional Context
 
@@ -106,13 +127,13 @@ Automated findings output for the contest can be found [here](add link to report
 - How many external calls?:   0
 - What is the overall line coverage percentage provided by your tests?:  100
 - Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?:   true
-- Please describe required context:   Auditors may have to understand / gain an understanding of positions inside of the Ajna-core contracts as well as understand reserve auctions inside the Ajna-core contracts
+- Please describe required context:   It may be helpful for auditors to gain an understanding of how positions manifest themselves as LP inside of the core pool contracts via methods like `addQuoteToken()` to better understand `PositionManager.sol`. Additionally, an understanding of reserve auctions (`kickReserveAuction()` and `takeReserves()`) will assist auditors in understanding and auditing `RewardsManager.sol`. `ajna-grants/src/grants` is relatively self encapsulating.
 - Does it use an oracle?:  No
-- Does the token conform to the ERC20 standard?:  True
+- Does the token conform to the ERC20 standard?:  True -> the Ajna token
 - Are there any novel or unique curve logic or mathematical models?: Listed in a whitepaper
-- Does it use a timelock function?:  True
-- Is it an NFT?: True
-- Does it have an AMM?:   
+- Does it use a timelock function?:  No
+- Is it an NFT?: True -> in `PositionManager.sol` one is created of a user's position
+- Does it have an AMM?: Swapping exists in the pool contracts but is out of scope for this audit
 - Is it a fork of a popular project?:   False
 - Does it use rollups?:   
 - Is it multi-chain?:  True
@@ -120,6 +141,15 @@ Automated findings output for the contest can be found [here](add link to report
 ```
 
 # Tests
+
+clone down and cd into the repo
+```
+
+```
+
+## Grants
+
+## PositionManager and RewardsManager
 
 *Provide every step required to build the project from a fresh git clone, as well as steps to run the tests with a gas report.* 
 
