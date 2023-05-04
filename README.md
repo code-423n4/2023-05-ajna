@@ -37,15 +37,13 @@ The Ajna protocol is a non-custodial, peer-to-peer, permissionless lending, borr
 
 ## On-chain context
 
-```
-DEPLOYMENT: Ethereum mainnet, Arbitrum, Optimism, Binance Smart Chain, Polygon, Fantom, Tron, Avalanche
-ERC20:  any - ERC20's are used in fungible, collection and subset pool types
-ERC721: any - ERC721's are used in collection and subset pool types
-ERC777: none
-FEE-ON-TRANSFER: none
-REBASING TOKENS: none
-ADMIN: N/A
-```
+# Deployment (by contract)
+
+| Contract             | Networks                                                                                                      |
+|----------------------|---------------------------------------------------------------------------------------------------------------|
+| `RewardsManager.sol` | Ethereum mainnet                                                                                              |
+| `PositionManager.sol`| Ethereum mainnet, Arbitrum, Optimism, Binance Smart Chain, Polygon, Fantom, Tron, Avalanche                   |
+| `GrantFund.sol`      | Ethereum mainnet                                                                                              |
 
 # Scope
 ### Files in scope
