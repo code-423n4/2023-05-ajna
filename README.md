@@ -41,7 +41,7 @@ The Ajna protocol is a non-custodial, peer-to-peer, permissionless lending, borr
 
 | Contract             | Networks                                                                                                      |
 |----------------------|---------------------------------------------------------------------------------------------------------------|
-| `RewardsManager.sol` | Ethereum mainnet                                                                                              |
+| `RewardsManager.sol` | Ethereum mainnet, Arbitrum, Optimism, Binance Smart Chain, Polygon, Fantom, Tron, Avalanche                   |
 | `PositionManager.sol`| Ethereum mainnet, Arbitrum, Optimism, Binance Smart Chain, Polygon, Fantom, Tron, Avalanche                   |
 | `GrantFund.sol`      | Ethereum mainnet                                                                                              |
 
