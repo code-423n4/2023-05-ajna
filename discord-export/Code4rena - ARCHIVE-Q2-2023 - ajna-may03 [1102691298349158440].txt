@@ -1,0 +1,1206 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q2-2023 / ajna-may03
+==============================================================
+
+[05/01/2023 20:28] kartoonjoy (pinned)
+👋 Hello and welcome to the contest channel for the $60,500 USDC **Ajna Protocol** contest!
+
+📆 Contest opens 05/03/2023 20:00 (20:00 UTC) and runs through 05/11/2023 20:00 (20:00 UTC) (8 days).
+
+Please give a warm welcome to the Ajna Protocol team, particularly @dizzy, @Ith.harvey, @anthropicprincipal and @EdNoepel | Ajna and @prat.gp, who will be available for questions either here in the channel or via DM in the EST timezone(s).
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this contest, consider enabling notifications for this channel. 🐺 ⏰
+
+Contest Page: https://code4rena.com/contests/2023-05-ajna-protocol
+
+{Embed}
+https://code4rena.com/contests/2023-05-ajna-protocol
+Code4rena Ajna Protocol
+$60,500 USDC
+3 May 2023—11 May 2023
+Code4rena - ARCHIVE-Q2-2023 - ajna-may03 [1102691298349158440].txt_Files/c4-og-banner-0FCFA.png
+
+{Reactions}
+🔥 (9) 👋 (5) 🎉 (3) 👽 🦋 
+
+[05/01/2023 20:28] kartoonjoy
+Pinned a message.
+
+
+[05/01/2023 20:29] kartoonjoy
+Let's please limit conversation until the contest begins. Thanks!
+
+{Reactions}
+🫡 (19) ✅ (5) 
+
+[05/03/2023 20:09] sp1cymeatball
+Do TOB and Sherlock's audit scopes overlap with the C4 or have they reviewed different set of contracts?
+
+{Reactions}
+👀 (7) peepoeyes (3) 
+
+[05/03/2023 20:23] ith.harvey
+Yes they all overlap : ). Although TOB and Sherlock's audits also included the pools contracts which are not in scope of this audit.
+
+{Reactions}
+👍 (2) 
+
+[05/03/2023 20:47] dicethedev
+LFG
+
+
+[05/04/2023 00:21] shealtielanz
+I'm confused as to the automated Findings, if I report an issues before 24 hours and its also included in the automated Findings I'm I eligible for rewards?
+
+
+[05/04/2023 00:22] shealtielanz
+??
+
+
+[05/04/2023 01:53] t.nero
+No, those findings will be considered known issues.
+
+
+[05/04/2023 03:48] 0xstalin
+if you've found out a real med or high, it is most likely that the issue won't be reported by the bot, I'd say at least a 95% chance the bot won't report that issue
+
+
+[05/04/2023 04:34] 0xjuntao
+@dizzy , @Ith.harvey , @prat.gp  Hi, is the Ajna Technical Spec up to date? does the whitepaper still apply to the current implementation?
+
+
+[05/04/2023 04:50] dizzy6247
+hey, yes, the latest whitepaper published should apply to current implementation
+
+
+[05/04/2023 04:55] 0xjuntao
+cool, thanks
+
+
+[05/04/2023 05:04] dizzy6247
+np! got a question about chains deployment strategy, so posting here for visibility: the `ajna-core` contracts are going to be deployed to other chains as well but `ajna-grants` will remain entirely on L1 https://github.com/code-423n4/2023-05-ajna/blob/main/ajna-grants/MULTICHAIN_STRATEGY.md#design
+
+{Reactions}
+👍 
+
+[05/04/2023 05:38] 0xnirlin
+So this implementation have been audited before or it is new one
+
+
+[05/04/2023 05:47] dizzy6247
+the same implementation was audited by Sherlock and TOB so far, reports are published here https://github.com/ajna-finance/audits
+
+
+[05/04/2023 05:58] brevist
+Have the findings been incorporated?
+
+
+[05/04/2023 05:58] dizzy6247
+yes, atm there's no known issue
+
+{Reactions}
+❤️ (5) 
+
+[05/04/2023 06:33] shealtielanz
+Bots are dangerous lol, the see Medium nowadays
+
+
+[05/04/2023 06:34] shealtielanz
+thanks let me create the issue asap
+
+
+[05/04/2023 06:41] kartoonjoy
+Additional members of the sponsor team to help with questions:
+@anthropicprincipal and @EdNoepel | Ajna
+
+{Reactions}
+👍 (2) 👋 (2) 
+
+[05/04/2023 07:34] 0xjuntao
+@dizzy dmed you please check
+
+{Reactions}
+👍 
+
+[05/04/2023 10:17] cloudellie (pinned)
+Wardens - please note that the automated findings output (AKA the winning bot race report 🏆, submitted by @IllIllI) is posted below. 
+
+These are considered publicly known issues and are **not eligible for awards**.
+
+🤖 Automated findings: 
+https://gist.github.com/CloudEllie/a4655b833548ed9a86a63eb7292bcc0f
+
+📄 Code4rena submission guidelines and automated findings policy: 
+https://docs.code4rena.com/roles/wardens/submission-policy#automated-findings-ineligible
+
+This will also be linked in the contest README file shortly.
+
+{Reactions}
+👍 (4) 
+
+[05/04/2023 10:25] cloudellie
+Pinned a message.
+
+
+[05/04/2023 14:06] gkrastenov
+@dizzy please check dm :thankyou:
+
+
+[05/04/2023 14:12] ith.harvey
+Feel free to send me your Dm's as well all, happy to answer
+
+
+[05/04/2023 15:37] 0xjmaria
+which are the docs that we should check for the competition guys?
+
+
+[05/04/2023 16:09] alexlangevin
+@0xjmaria It's all in the README: https://github.com/code-423n4/2023-05-ajna#resources
+
+{Embed}
+https://github.com/code-423n4/2023-05-ajna
+GitHub - code-423n4/2023-05-ajna
+Contribute to code-423n4/2023-05-ajna development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q2-2023 - ajna-may03 [1102691298349158440].txt_Files/9597b876-a4bb-434d-86b7-2e9ce368bd4c-1B806
+
+
+[05/04/2023 16:21] 0xjmaria
+thanks
+
+{Reactions}
+👍 (2) 
+
+[05/04/2023 17:15] kodyvim
+sent you a dm
+
+
+[05/04/2023 17:16] shealtielanz
+the issue was reported in the automated Findings , but I submitted before it came out so I don't know
+
+{Reactions}
+😅 (2) 
+
+[05/04/2023 17:19] kodyvim
+seems you got frontrunned by a bot lol
+
+{Reactions}
+🤖 (2) 
+
+[05/04/2023 17:21] 0xstalin
+daang, these bots are going out of the chain, Skynet is on the way
+
+
+[05/04/2023 18:20] jauvany
+no tests for ajna-may03?
+
+
+[05/04/2023 18:40] dizzy6247
+there are quite a decent amount of unit tests for contracts in scope, we're still working to improve invariant testing https://github.com/code-423n4/2023-05-ajna/tree/main/ajna-core/tests/forge/unit
+https://github.com/code-423n4/2023-05-ajna/tree/main/ajna-grants/test/unit
+https://github.com/code-423n4/2023-05-ajna/tree/main/ajna-grants/test/invariants
+
+{Reactions}
+👍 
+
+[05/04/2023 18:41] jauvany
+Thank you very much 🙏
+
+{Reactions}
+👍 
+
+[05/04/2023 19:58] 0xkazimm
+where can i find the docs of the codebase/protocol ? not the whitepaper
+
+
+[05/04/2023 20:00] 0xkazimm
+in the repo it say only 3 contract is in scope but in the `scope` there is some lib and abstract contract, did all of them included in the scope ?
+
+
+[05/04/2023 20:12] SpaceCake#8961
+Noobie question 🙋‍♂️ : how far can we thinker with what is deployed on Goerli? Should I limit myself to something deployed locally on Ganache? Is deploying locally on Ganache going to help? My mind is telling me that it should be part of any audit, but I can't be sure.
+
+{Reactions}
+🧐 
+
+[05/04/2023 20:43] 0xstalin
+I'd personally say you should stick to the version of the codebase that was submitted for the contest, sometimes the contracts deployed on public testnets or even mainnet may be previous versions of the codebase, where there could be previous issues that have been fixed in the version submitted for the contest
+
+{Reactions}
+✅ 
+
+[05/04/2023 20:43] sp1cymeatball
+I'm curious about the bucket bankruptcy mechanism, any docs where this process is explained?
+
+
+[05/04/2023 21:17] ith.harvey
+Updated the Readme to reflect our deployment strategy ->
+
+```
+RewardsManager.sol ->    Ethereum mainnet, Arbitrum, Optimism, Binance Smart Chain, Polygon, Fantom, Tron, Avalanche
+PositionManager.sol ->    Ethereum mainnet, Arbitrum, Optimism, Binance Smart Chain, Polygon, Fantom, Tron, Avalanche
+GrantFund.sol ->    Ethereum mainnet
+```
+
+{Reactions}
+👍🏻 (3) 
+
+[05/04/2023 21:45] ith.harvey (pinned)
+Another Question I have gotten twice now:
+```
+(bool success, bytes memory returndata) = targets_[i].call{value: values_[i]}(calldatas_[i]); This is a part of the _execute , targets[i] is supposed to be a smart contract address right as it is a proposal , it is not meant to be an EOA.
+```
+Yes `targets_` should always be the `ajnaTokenAddress` and `values_` should always be zero.
+
+
+[05/04/2023 22:13] kartoonjoy
+Pinned a message.
+
+
+[05/05/2023 04:49] 0xstalin
+@Ith.harvey @kartoonjoy @CloudEllie 
+I have a question, what would be the criteria for an issue submitted by a warden that was partially reported by the bot, but the bot didn't report all the occurrences of the issue across the codebase and the remediation of warden's issue requires a couple of extra steps?
+
+
+[05/05/2023 06:32] pfapostol
+the vulnerability itself is considered out of scope, regardless of instances. An exception if you can escalate an impact from the instance that is not presumed by the original vulnerability.
+
+
+[05/05/2023 06:56] shealtielanz
+I Don't think so, code4arena stated that they value better audit reports and a good coverage of a Vulnerability, also the Recommended Mitigation Steps.
+
+
+[05/05/2023 06:57] pfapostol
+not sure. it used to be like this, maybe something has changed after the bot races.
+
+{Reactions}
+🔥 
+
+[05/05/2023 07:15] 0xjuntao
+I agree, for example, the bot reported Loss of precision as low, but if you can find H/M issue due to precision loss, it's still valid
+
+
+[05/05/2023 07:16] 0xjuntao
+otherwise bot can simply report all the type of vulnerabilities, then no findings will be valid😂
+
+
+[05/05/2023 07:24] 0xstalin
+and even more important if the issue that you find out is caused by some precision loss that was not even reported by the bot.
+For example, the bot reported lines 10, 15, and 20 to have precision loss issues, but then you find out that in line 95 there is also a loss of precision that combined with another factors would end up causing a H/M issue
+
+{Reactions}
+🔥 
+
+[05/05/2023 07:24] 0xstalin
+but let's see what the c4 team replies back
+
+
+[05/05/2023 07:26] pfapostol
+yes, that's what I meant. But if you find another precision loss that is not found by the bot, then you cannot report it as low, only as escalated issue.
+
+
+[05/05/2023 07:27] pfapostol
+how vulnerability is assessed is up to the judge, not c4
+
+{Reactions}
+🧐 
+
+[05/05/2023 07:29] pfapostol
+https://github.com/code-423n4/org/issues/81
+
+{Embed}
+https://github.com/code-423n4/org/issues/81
+Standardize acceptance of reports based on automated findings · Iss...
+It is (still) unclear to most wardens and some judges which automatic findings can be reported to contests. Quoting this discussion: Wardens may choose to use c4udit and other automated tools as a ...
+Code4rena - ARCHIVE-Q2-2023 - ajna-may03 [1102691298349158440].txt_Files/81-DA66A
+
+
+[05/05/2023 10:36] cloudellie
+Recommend reading this section of the docs: https://docs.code4rena.com/roles/wardens/submission-policy#automated-findings-considered-known-issues
+
+> Wardens may use automated tools as a first pass, and build on these findings to identify High and Medium severity issues ("HM issues"). However, submissions based on automated tools will have a higher burden of proof for demonstrating to sponsors a relevant HM exploit path in order to be considered satisfactory.
+
+{Embed}
+https://docs.code4rena.com/roles/wardens/submission-policy
+Submission policy
+
+{Reactions}
+👍 (2) 
+
+[05/05/2023 10:36] cloudellie
+(which btw is also linked directly below the bot report in the pinned post)
+
+
+[05/05/2023 12:54] zaevlad
+@dizzy dm you, thanks
+
+{Reactions}
+👍 
+
+[05/05/2023 14:35] dec3ntraliz3d
+@dizzy sent you a dm .
+
+
+[05/05/2023 15:05] simonpure
+fyi for anyone who doesn't want to downgrade foundry, wrapping the `vm.stopPrank`in a `try / catch` is another temporary workaround.
+
+ex. for `ajna-grants`
+
+```
+diff --git a/ajna-grants/lib/forge-std/src/StdCheats.sol b/ajna-grants/lib/forge-std/src/StdCheats.sol
+index d4d5670..79ed305 100644
+--- a/ajna-grants/lib/forge-std/src/StdCheats.sol
++++ b/ajna-grants/lib/forge-std/src/StdCheats.sol
+@@ -543,12 +543,12 @@ abstract contract StdCheats is StdCheatsSafe {
+     }
+ 
+     function changePrank(address msgSender) internal virtual {
+-        vm.stopPrank();
++        try vm.stopPrank() { } catch { }
+         vm.startPrank(msgSender);
+     }
+ 
+     function changePrank(address msgSender, address txOrigin) internal virtual {
+-        vm.stopPrank();
++        try vm.stopPrank() { } catch { }
+         vm.startPrank(msgSender, txOrigin);
+     }
+ 
+diff --git a/ajna-grants/test/invariants/handlers/Handler.sol b/ajna-grants/test/invariants/handlers/Handler.sol
+index c4fe42c..b3dc27a 100644
+--- a/ajna-grants/test/invariants/handlers/Handler.sol
++++ b/ajna-grants/test/invariants/handlers/Handler.sol
+@@ -89,13 +89,13 @@ contract Handler is Test, GrantFundTestHelper {
+     }
+ 
+     modifier useRandomActor(uint256 actorIndex) {
+-        vm.stopPrank();
++        try vm.stopPrank() { } catch { }
+ 
+         address actor = actors[constrictToRange(actorIndex, 0, actors.length - 1)];
+         _actor = actor;
+         vm.startPrank(actor);
+         _;
+-        vm.stopPrank();
++        try vm.stopPrank() { } catch { }
+     }
+ 
+     /*************************/
+```
+
+{Reactions}
+💯 (4) 💪🏻 👊 
+
+[05/05/2023 15:13] dizzy6247
+that should work for `ajna-grants`. will be harder for `ajna-core` as we have change pranks that relies on prev `vm.prank` calls https://github.com/foundry-rs/foundry/issues/4835
+
+
+[05/05/2023 15:18] simonpure
+I haven't tried for `ajna-core` yet, but I also had to patch `changePrank` in `lib/forge-std/src/StdCheats.sol` for `ajna-grants` to make it work which is not pretty.
+
+Looks like `changePrank` is going away based on the github thread you linked.
+
+
+[05/05/2023 15:19] dizzy6247
+yeah, `startPrank` will take it over
+
+
+[05/05/2023 18:05] SpaceCake#8961
+I am having noobie problems deploying the Ajna token on a local Ganache instance. Can i reach to  somebody willing to be bothered? Is it okay if I ask about those here?
+
+
+[05/05/2023 18:17] SpaceCake#8961
+Is there a recommended tool to use for local deployment? I only know about Ganache
+
+
+[05/05/2023 18:22] simonpure
+Here are the changes I needed to make for `ajna-core`to pass
+
+```
+diff --git a/ajna-core/lib/forge-std/src/Test.sol b/ajna-core/lib/forge-std/src/Test.sol
+index 3d7e9f9..0679df0 100644
+--- a/ajna-core/lib/forge-std/src/Test.sol
++++ b/ajna-core/lib/forge-std/src/Test.sol
+@@ -82,7 +82,7 @@ abstract contract Test is DSTest, Script {
+     }
+ 
+     function changePrank(address who) internal {
+-        vm.stopPrank();
++        try vm.stopPrank() { } catch { }
+         vm.startPrank(who);
+     }
+ 
+diff --git a/ajna-core/tests/forge/invariants/base/handlers/unbounded/BaseHandler.sol b/ajna-core/tests/forge/invariants/base/handlers/unbounded/BaseHandler.sol
+index 718b3dd..b1064f8 100644
+--- a/ajna-core/tests/forge/invariants/base/handlers/unbounded/BaseHandler.sol
++++ b/ajna-core/tests/forge/invariants/base/handlers/unbounded/BaseHandler.sol
+@@ -135,13 +135,13 @@ abstract contract BaseHandler is Test {
+     }
+ 
+     modifier useRandomActor(uint256 actorIndex_) {
+-        vm.stopPrank();
++        try vm.stopPrank() { } catch { }
+ 
+         _actor = actors[constrictToRange(actorIndex_, 0, actors.length - 1)];
+ 
+         vm.startPrank(_actor);
+         _;
+-        vm.stopPrank();
++        try vm.stopPrank() { } catch { }
+     }
+ 
+     modifier useRandomLenderBucket(uint256 bucketIndex_) {
+```
+
+
+[05/05/2023 18:22] simonpure
+and
+
+```
+diff --git a/ajna-core/tests/forge/unit/ERC721Pool/ERC721DSTestPlus.sol b/ajna-core/tests/forge/unit/ERC721Pool/ERC721DSTestPlus.sol
+index dc44a3f..28d081c 100644
+--- a/ajna-core/tests/forge/unit/ERC721Pool/ERC721DSTestPlus.sol
++++ b/ajna-core/tests/forge/unit/ERC721Pool/ERC721DSTestPlus.sol
+@@ -779,7 +779,7 @@ abstract contract ERC721NDecimalsHelperContract is ERC721DSTestPlus {
+         // _anonBorrowerCount += 1;
+         
+         address borrower = makeAddr(string(abi.encodePacked("anonBorrower", borrowers.length())));
+-        vm.stopPrank();
++        try vm.stopPrank() {} catch {}
+         _mintAndApproveCollateralTokens(borrower, 1);
+         uint256[] memory tokenIdsToAdd = new uint256[](1);
+         tokenIdsToAdd[0] = _collateral.totalSupply();
+@@ -843,7 +843,7 @@ abstract contract ERC721FuzzyHelperContract is ERC721DSTestPlus {
+         changePrank(borrower_);
+         tokenIds_ = new uint256[](requiredCollateral_);
+         for (uint i = 0; i < requiredCollateral_; ++i) {
+-            vm.stopPrank();
++            try vm.stopPrank() {} catch {}
+             _mintAndApproveCollateralTokens(borrower_, 1);
+             tokenIds_[i] = _collateral.totalSupply();
+         }
+```
+
+
+[05/06/2023 14:15] 0x3b
+@Ith.harvey when the `StandardFunding` is deployed, does someone need to call `startNewDistributionPeriod()`, and if someone needs to call it, does it mean distribution 0 will be empty of params, and the actual first distribution will be 1
+
+
+[05/06/2023 15:07] ith.harvey (pinned)
+Here is another helpful document outlining actors, roles and responsibilities -> https://docsend.com/view/6i83dsmkqq6y87xn
+
+{Embed}
+https://docsend.com/view/6i83dsmkqq6y87xn
+DocSend - Simple, intelligent, modern content sending
+DocSend helps you communicate more effectively by telling you what happens to content after you send them and letting you keep control in real time.
+Code4rena - ARCHIVE-Q2-2023 - ajna-may03 [1102691298349158440].txt_Files/ds-logo-icon-126807ac9914f82e45e9306394e76-568D5.jpg
+
+{Reactions}
+🙌 (2) 
+
+[05/06/2023 15:08] SpaceCake#8961
+Niice! I was in the middle of creating such document, with scenarios of use 🙂
+
+
+[05/06/2023 15:35] kartoonjoy
+Pinned a message.
+
+
+[05/06/2023 16:24] dugdaniels
+@Ith.harvey How do you anticipate the ANJA token distributions to look over time? As in the percentage in circulation vs in the treasury?
+
+
+[05/06/2023 16:38] koko1912
+How can I run tests? I got some errors
+
+
+[05/06/2023 16:44] ith.harvey
+Did you follow the readme instruction? a specific foundry version is needed.
+
+
+[05/06/2023 16:47] koko1912
+Can you check DM?
+
+{Reactions}
+👀 
+
+[05/06/2023 17:17] 0x0oz
+hardhat node, 
+foundry has a cli tool called anvil,
+
+{Reactions}
+♥️ 
+
+[05/06/2023 17:48] iovcharov
+Is anyone else's slither failing?
+
+
+[05/06/2023 17:57] SpaceCake#8961
+Are you using the slither.config.json files?
+
+
+[05/06/2023 18:31] mariodev__
+Still no automated findings?
+
+
+[05/06/2023 18:41] favelanky
+https://discord.com/channels/810916927919620096/1102691298349158440/1103626566367445063
+
+
+[05/06/2023 19:24] mariodev__
+hehe really sorry
+
+
+[05/06/2023 23:03] troublor
+Is there a developer of Ajna Protocol in this channel?
+
+
+[05/06/2023 23:12] blckhv
+https://discord.com/channels/810916927919620096/1102691298349158440/1103571984140484649
+
+
+[05/06/2023 23:36] troublor
+Thanks
+
+
+[05/07/2023 00:11] 0xrobocop
+@Ith.harvey check dm sir, pls.
+
+
+[05/07/2023 05:25] mustythefirst
+I'm not sure how to register for the Ajna competition. It says join C4 Discord to register and it seems that I have already
+
+
+[05/07/2023 08:02] t.nero
+If you already have enrolled as a warden, you are free to join, no need to register for any public contests.
+
+
+[05/07/2023 08:03] mustythefirst
+thanks!
+
+
+[05/07/2023 08:04] t.nero
+np, enjoy hunting. wish you luck. 👍
+
+
+[05/07/2023 08:45] 0xnirlin
+as the whole protocol is not in scope, do i need to through whole specification and whitepaper or there are some parts that i go through and i am good to go.
+
+
+[05/07/2023 09:29] t.nero
+Topic 9.2 in their whitepaper if you are willing to go for `ajna-grants`.
+
+
+[05/07/2023 09:59] 0xnirlin
+actally doing position manager rn
+
+
+[05/07/2023 10:16] t.nero
+a tough one
+
+
+[05/07/2023 14:17] evokid
+Same question
+
+
+[05/07/2023 16:16] ith.harvey
+cannot speak to this question yet unfortunatley. Lender liquidity inscentives will be provided at launch however I can't speak to circulation.
+
+{Reactions}
+👍🏻 
+
+[05/07/2023 19:34] evokid
+Dmed you @Ith.harvey
+
+
+[05/07/2023 20:31] 0xkazimm
+guys what LPB point to?
+
+
+[05/08/2023 03:23] 0xnirlin
+LPB is Liquidity Provider Balance, check the bucket section in whitepaper
+
+
+[05/08/2023 03:32] alliums0517
+@Ith.harvey check dm
+
+
+[05/08/2023 08:50] 0xpathfindr
+Hey @Ith.harvey have a few questions, dropped you a dm. Thanks.
+
+
+[05/08/2023 10:04] 0xnirlin
+what is bankruptcy time
+
+
+[05/08/2023 10:04] 0xnirlin
+there is no such thing in docs
+
+
+[05/08/2023 12:43] ith.harvey (pinned)
+Got this a couple times so I want to make it clear-> The Final percentage of tokens per quarter for the treasury will be 3%... the spec is outdated, apologies.
+
+{Reactions}
+👍 
+
+[05/08/2023 13:34] cloudellie
+Pinned a message.
+
+
+[05/08/2023 13:42] golanger
+Anyone know where I can get a valid ETH_RPC_URL to run the tests? Is there a local node provided via Hardhat? Trying to run tests with foundry
+
+
+[05/08/2023 13:55] t.nero
+alchemy, infura
+
+{Reactions}
+👍 
+
+[05/08/2023 14:19] blckhv
+@Ith.harvey can you check dm?
+
+
+[05/08/2023 14:37] dizzy6247 (pinned)
+this new FAQ just landed https://faqs.ajna.finance/faqs/general some good info there for common things. thanks!
+
+{Reactions}
+👍 
+
+[05/08/2023 14:45] evokid
+@dizzy demd you
+
+
+[05/08/2023 14:53] koolexc
+@dizzy DMed for a quick question
+
+
+[05/09/2023 05:29] PrasadLak#0622
+@dizzy Dmed
+
+
+[05/09/2023 17:09] 0xrobocop
+@Ith.harvey  sent dm sir,
+
+
+[05/09/2023 19:40] aviggiano
+dmed @Ith.harvey
+
+
+[05/09/2023 20:29] lynux1337
+I submitted a new high report for ajna
+
+When i get results for that?
+
+
+[05/09/2023 20:31] lynux1337
+@Ith.harvey
+
+
+[05/09/2023 20:32] dadekuma
+usually 1-2 months after the contest has ended
+
+
+[05/09/2023 20:33] lynux1337
+Mean when project say accepted or not that
+
+
+[05/09/2023 21:10] saksham#7993
+@Ith.harvey Dmed ser
+
+
+[05/09/2023 21:16] 0x73696d616f
+ERC20Votes issues should be an issue of type Governance?
+
+
+[05/09/2023 21:20] ith.harvey
+Some context to bucket bankruptcy ->
+**Bucket bankruptcy**
+- occurs on a withdraw of deposit or claimable collateral from a bucket if both are zero and yet there is outstanding LP balance for the bucket when the withdrawal is made, the previous LP balances are forfeited.  This can happen when there is bad debt, as the scaling factor may be 0.
+- May not add deposit or claimable collateral to a bucket that has been bankrupted in the same block
+
+
+[05/09/2023 22:08] niser93
+Maybe i've some settings problem... test and gas report have very long duration (about 1 hour). It is right?
+
+
+[05/09/2023 22:23] ith.harvey
+no, that shouldn't be the case
+
+
+[05/10/2023 01:59] mh9849
+Did you set the ETH_RPC_URL value expected in .env?
+
+
+[05/10/2023 03:16] 0xjuntao
+@Ith.harvey  Dmed please check
+
+
+[05/10/2023 05:00] lynux1337
+@Ith.harvey Dmed please check
+
+
+[05/10/2023 07:45] kartoonjoy
+Pinned a message.
+
+
+[05/10/2023 09:05] niser93
+Yes, i'm using my infura mainnet api key. When i run test-with-gas-report, it lasts about 10 minutes for ajna-core and 20 minutes for ajna-grants.
+When i launch forge snapshot in order to report gas diff, it lasts 1 hour 😔
+
+
+[05/10/2023 09:19] dizzy6247
+try `forge snapshot --no-match-test "testLoad|invariant|test_regression"` these are time consuming tests
+
+{Reactions}
+10_10 
+
+[05/10/2023 09:53] mahdirostami
+Hello in "positionmanager.sol" "mint" function, how do we send our quote tokens?
+
+
+[05/10/2023 10:02] dizzy6247
+hey! The positions can be memorialized only after token minted, through memorializePositions function
+
+
+[05/10/2023 10:06] mahdirostami
+thank you
+
+{Reactions}
+👍 
+
+[05/10/2023 14:33] dadekuma
+@dizzy DMed
+
+
+[05/11/2023 10:35] teawaterwire
+same @dizzy
+
+
+[05/11/2023 13:14] _3agle
+@Ith.harvey DMed pls check
+
+
+[05/11/2023 20:02] C4
+**🚨 CONTEST ALERT**
+
+@🐺wardens  The **Ajna Protocol** contest is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Keep an eye on #📢announcements for regular updates on how the contest is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a Contest Admin if you have questions along the way!
+
+{Reactions}
+🎉 (29) 10_10 (6) 😴 (3) 🥱 (4) thisisfine (3) 👽 🦋 
+
+[05/11/2023 20:28] 0xkazimm
+thanks for the team they answered most of the questions @dizzy @Ith.harvey  and others
+
+{Reactions}
+🎉 (4) ❤️ (2) 👍 
+
+[05/12/2023 02:05] bytes032
+Great contest, great sponsors - thank you everybody from the Ajna team and @dizzy, @Ith.harvey  in particular!
+
+{Reactions}
+hi5 (9) 🙏 (5) 
+
+[05/12/2023 07:54] evokid
+I would say the same ☕
+
+{Reactions}
+🙏 
+
+[05/12/2023 13:43] dec3ntraliz3d
+Didn't have much luck  however really enjoyed the codebase. Wish all codebases were easy to read like this one 🙂
+
+{Reactions}
+🙏 (11) 
+
+[05/18/2023 08:10] sathish9098kumar
+@Picodes | Angle DMed
+
+
+[05/23/2023 23:58] niser93
+@CloudEllie could i dm you in order to ask some questions about bot race judjement?
+Thanks in advance
+
+
+[05/24/2023 09:16] cloudellie
+would be best to post in #bot-race-help 🙂 @Alex The Entreprenerd is handling judging for these at the moment so you may want to tag him in as well.
+
+{Reactions}
+👍 (2) 
+
+[06/07/2023 20:25] liveactionllamac4
+:code4rena: 💸 🎉 Awards for **Ajna Protocol**:
+
+$6,000.02 USDC » @Koolex 
+$5,402.17 USDC » @Haipls 
+$3,211.20 USDC » @hyh
+$2,817.83 USDC » @nobody2018 
+$1,618.63 USDC » @sces60107 | GimelSec 
+$1,413.27 USDC » @SpicyMeatball 
+$1,221.35 USDC » @kutu
+$1,152.93 USDC » @rvierdiiev 
+$1,135.45 USDC » @Jorgect
+$943.84 USDC » @bytes032 
+$912.95 USDC » @rbserver 
+$889.58 USDC » @ABAIKUNANBAEV
+$876.47 USDC » @0xnev
+$845.55 USDC » @Vagner
+$845.55 USDC » @shealtielanz 
+$806.51 USDC » @0xRobocop 
+$741.97 USDC » @vakzz 
+$608.12 USDC » @0x73696d616f 
+$606.98 USDC » @volodya 
+$583.63 USDC » @juancito 
+$570.75 USDC » @0xStalin
+$440.61 USDC » @0xpathfindr
+$423.24 USDC » @Kenshin
+$392.87 USDC » @aviggiano 
+$358.46 USDC » @Ruhum 
+$342.43 USDC » Audit_Avengers ( @0xSmartContractSamurai, @pxng0lin, @ansa-zanjbeel, @Jorgect, @Sergio Mazariego, @zzebra83, @Ox_Aon, @jefestar, & @ravikiranweb3 ) 
+$329.76 USDC » @cryptostellar5 
+$327.76 USDC » @patitonar
+$326.09 USDC » @Dug
+$309.08 USDC » BPZ ( @pa6221, @Bitcoinfever244, & @PrasadLak ) 
+$304.58 USDC » @Sathish9098 
+$304.58 USDC » @yixxas
+$304.58 USDC » GG_Security ( @georgits & @gkrastenov ) 
+$304.58 USDC » @nadin 
+$304.58 USDC » @lfzkoala
+$294.51 USDC » @comradeKtg
+$285.37 USDC » @0xWaitress
+$285.37 USDC » @J4de
+$269.24 USDC » @Bauchibred 
+$269.24 USDC » @0xladboy | Sparkware 
+$253.66 USDC » @Troublor
+$253.66 USDC » @deadrosesxyz 
+$237.76 USDC » @ast3ros 
+$237.76 USDC » @xuwinnie
+$233.79 USDC » @JCN 
+$223.47 USDC » REACH ( @mis4nthr0pic | OS/SS, @KrisApostolov, @Priyam, @escrow, @0xWagmi, @0x3b, @0xWOK, @mariodev__, & @DedOhwale (GMT-7) )
+$195.42 USDC » @0xSmartContract   
+$179.84 USDC » @hunter_w3b 
+$179.84 USDC » @ReyAdmirado 
+$179.84 USDC » @Raihan 
+$179.84 USDC » @SAQ
+$179.84 USDC » @yongskiws 
+$179.84 USDC » @Rageur
+$179.84 USDC » @petrichor🦖 
+$179.84 USDC » @c3phas 
+$171.22 USDC » @7siech 
+$107.56 USDC » @Juntao🐾 
+$104.02 USDC » @0xTheC0der 
+$85.83 USDC » @sakshamguruji 
+$71.33 USDC » @aashar 
+$70.26 USDC » @ToonVH 
+$70.26 USDC » @kodyvim 
+$70.26 USDC » @DadeKuma 
+$68.04 USDC » @ro1sharkm
+$58.51 USDC » @web3creed
+$58.51 USDC » @kaveyjoe
+$58.51 USDC » @codeslide 
+$58.51 USDC » @ayden 
+$58.51 USDC » @code-cipher 
+$58.51 USDC » @descharre 
+$58.51 USDC » @pontifex 
+$54.07 USDC » @Jiamin
+$54.07 USDC » @circlelooper 
+$51.81 USDC » BGSecurity ( @anonresearcher & @martin | Founder @ ShieldifySec ) 
+$51.81 USDC » @Jerry0x 
+$36.24 USDC » @tsar
+$36.24 USDC » @ginlee
+$36.24 USDC » @Brenzee
+$36.24 USDC » @berlin.101 
+$36.24 USDC » UniversalCrypto ( @amaechi eth & @tettehnetworks )
+
+
+[06/07/2023 20:25] liveactionllamac4
+$36.24 USDC » @Santiago Moreno 
+$36.24 USDC » @T1MOH 
+$36.24 USDC » @wonjun 
+$36.24 USDC » @Shogoki
+$36.24 USDC » @squeaky_cactus
+$36.24 USDC » @hals 
+$36.24 USDC » @peanuts 
+$36.24 USDC » @lukris02 
+$36.24 USDC » @btk
+$36.24 USDC » @teawaterwire 
+$36.24 USDC » @yjrwkk 
+$36.24 USDC » @naman1778
+$36.24 USDC » @Tedo
+$36.24 USDC » @MohammedRizwan 
+$34.02 USDC » @Azhar
+$34.02 USDC » @evmboi32 
+$22.28 USDC » @okolicodes
+$22.28 USDC » @Eurovickk
+$22.28 USDC » @K42 Ψ
+$22.28 USDC » @Blckhv 
+$22.28 USDC » @SAAJ 
+$22.28 USDC » @j4ld1na
+$22.28 USDC » @Tomio
+$22.28 USDC » @Shubham
+$22.28 USDC » @Walter
+$22.28 USDC » @SM3_SS
+$15.58 USDC » @TS001
+$15.58 USDC » @0xjmaria
+$15.58 USDC » @mrvincere
+$15.58 USDC » @0xcm
+$15.58 USDC » @kenta 
+$15.58 USDC » @Audinarey
+$15.58 USDC » @tsvetanovv
+$15.58 USDC » @evokid 
+
+🏁 Findings summary
+---------------------------
+High risk findings: 70 total, 11 unique
+Med risk findings: 37 total, 14 unique
+Gas reports: 32
+QA reports: 54
+
+Awards will be distributed on Polygon within the next week. Congratulations, everyone! 💸 💸 💸
+
+Note: If you participated in this audit and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.
+
+{Reactions}
+💯 (16) 🔥 (9) 🥳 (4) 🙏 (4) 👽 🦋 
+
+[06/07/2023 20:34] 0xjuancito
+Should it take some time for it to show on the page? https://code4rena.com/contests/2023-05-ajna-protocol
+
+
+[06/07/2023 20:36] liveactionllamac4
+Yes, will update that soon! 🙂
+
+Update: results should now be showing!
+
+{Reactions}
+👌 (4) 
+
+[06/07/2023 22:37] 0xstalin
+niceee, got 1 high, finally, time to request the backstage role  🫡
+
+{Reactions}
+hi5 (9) 🚀 (4) ➕ (2) 
+
+[06/08/2023 00:22] bean.eth2
+Congrats!
+
+
+[06/08/2023 00:23] bean.eth2
+i got a high too; looks like another 20 persons found it together though🙂
+
+{Reactions}
+🦾 (2) 
+
+[06/08/2023 00:23] bean.eth2
+what is backstage role about?
+
+
+[06/08/2023 00:38] 0xstalin
+With backstage role you can see the judging process
+
+{Reactions}
+🫡 (3) 
+
+[06/08/2023 02:52] nobody2018
+Kyc has been approved for a week now. I applied for a backstage role half a month ago. When will the results be available? I want to see issues. thank you
+
+
+[06/08/2023 04:46] its_basu
+When will audit reports go live ?
+
+
+[06/08/2023 06:01] dicethedev
+Glad to be on the list. Thank you! 💪💪
+
+
+[06/08/2023 06:02] dicethedev
+@0xladboy | Sparkware I can see you too. 😁😁🚀
+
+
+[06/08/2023 06:26] kodak_rome
+Wow 😳 Didn't know this.
+Where these rules stated?
+Can't remember seeing in doc.
+
+
+[06/08/2023 07:12] 0xpathfindr
+I found a Medium issue with 7 others but the rewards for each warden who found this issue were not split equally?
+
+
+[06/08/2023 07:14] 0xpathfindr
+Names have been redacted. As you can see, Pie is the same but slice is not one user earns significantly more for the same issue
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2023 - ajna-may03 [1102691298349158440].txt_Files/Screenshot_2023-06-08_at_08.13.00-1407F.png
+
+
+[06/08/2023 07:16] 0xpathfindr
+Why is this the case?
+
+
+[06/08/2023 07:18] 0xnirlin
+You can see 0.25, which means partial 25%, you got 25% of actual reward for issue.
+
+Reason for that being are usually, low quality report, that may explain certain part of vulnerability and miss others.
+
+
+[06/08/2023 07:20] 0xpathfindr
+hmmm, the reason makes sense. Although I do feel my explanation for this issue was appropriate. Never the less, on to the next one.
+
+
+[06/08/2023 07:40] georgits
+where can I find this file?
+
+
+[06/08/2023 07:41] 0xpathfindr
+https://discord.com/channels/810916927919620096/810916927919620099/1101384653170032760
+
+{Reactions}
+🙌 
+
+[06/08/2023 16:14] 0xstalin
+I believe this was a recent change, like 2-3 months ago
+
+{Reactions}
+👍 
+
+[06/08/2023 18:38] sockdrawermoney
+just looked and backstage is actually a little over a year old at this point! found the first post in the channel was none other than @Dravee
+
+{Attachments}
+Code4rena - ARCHIVE-Q2-2023 - ajna-may03 [1102691298349158440].txt_Files/Screenshot_2023-06-08_at_11.36.23_AM-A74DB.png
+
+{Reactions}
+💜 (5) 😂 (8) 🚀 (2) 
+
+[06/09/2023 10:15] bason91
+@🦙 liveactionllama | C4, hello, where can we see which issues we submitted were accepted and which were not? Thanks!
+
+
+[06/09/2023 12:43] itsmetechjay
+Once the report is published and the findings repo is made public, you'll be able to review the submissions.
+
+
+[06/10/2023 10:25] sm3_ss
+Hi I recently participated in a contest on your platform and was awarded 22 USDC as a prize. However, despite my name being on the list of winners, I have not yet received the USDC in my wallet.
+
+I am writing to request your assistance in resolving this issue and ensuring that the USDC is credited to my wallet.
+
+
+[06/10/2023 10:37] nadin4559
+Reward sent via Polygon network, check ur wallet again
+
+
+[06/10/2023 10:52] sm3_ss
+i checked my wallet but there was no transaction  (polygon network)
+
+
+[06/10/2023 10:57] 0x3b
+had you added usdc as an asset to your MM
+
+
+[06/10/2023 11:11] sm3_ss
+yes i added usdc
+
+
+[06/10/2023 11:16] 0x3b
+then DM one of the staff, they will be able to help you out
+
+
+[06/10/2023 12:58] kaveyjoe
+Payment received
+
+
+[06/10/2023 13:13] sm3_ss
+No
+
+
+[06/10/2023 13:23] kaveyjoe
+Check your wallet properly , In my case i received  my payment.
+
+
+[06/10/2023 15:54] sm3_ss
+i don't know what is they problem. in my wallet did not received my payment
+
+
+[06/10/2023 15:55] sm3_ss
+i checked my wallet every thing is fine
+
+
+[06/10/2023 16:10] sm3_ss
+how we can find  staff?
+
+
+[06/10/2023 16:13] petrichor0961
+wozghama
+
+{Reactions}
+chefskiss 
+
+[06/11/2023 06:14] sm3_ss
+is there any one who announce in ajna-may03  reward they did not receive payment.
+
+
+[06/11/2023 06:22] 0x3b
+you are waiting for ajna? Usually it takes about 7 days for the payout to be distributed, I was not on the payout lead so I am not sure when they are send
+
+
+[06/11/2023 06:26] sm3_ss
+they are send for announce lead but i was in they payout lead the did not send
+
+
+[06/11/2023 06:27] sm3_ss
+i don't know why
+
+
+[06/11/2023 08:07] 0xnirlin
+Have you checked by changing the network to polygon on your wallet?
+
+
+[06/11/2023 08:17] sm3_ss
+yes i checked every thing is good they network polygon
+
+
+[06/11/2023 08:19] nadin4559
+Try tracking the transactions of ur wallet address on Polygonscan.com
+
+
+[06/11/2023 09:31] saq_143
+Teng sha
+
+
+[06/11/2023 12:49] sm3_ss
+band shah lowdah
+
+{Reactions}
+😜 
+
+[06/14/2023 18:50] okolicodes
+⚡️⚡️
+
+
+[06/21/2023 01:44] tamayonft
+Sorry there is a reason why the payment it's still not made it?
+
+
+[06/21/2023 02:13] 0xstalin
+The rewards have already been sent sir
+
+
+[06/21/2023 02:23] tamayonft
+And the funds going directly to the wallet right?
+
+
+[06/21/2023 03:58] 0xstalin
+yup, in polygon as usdc
+
+
+[06/21/2023 13:40] tamayonft
+Thanks Sr
+
+
+==============================================================
+Exported 195 message(s)
+==============================================================
